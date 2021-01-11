@@ -8,11 +8,9 @@ html{
 }
 .logo{
     height: 50px;
-
 }
 main{
-    background-color: rgb(216, 216, 216);
-    background-image: url("https://www.lamlisse.nl/wp-content/uploads/2018/06/tilleman_20180609-0041.jpg");
+    background-color: rgb(221, 220, 220);
     background-blend-mode: screen;
 }
 nav ul{
@@ -22,7 +20,7 @@ nav ul{
     display: flex;
 }
 nav li{
-    flex: 1 0 330px;
+    flex: 0 0 260px;
 }
 nav a{
     color: rgb(173, 173, 173);
@@ -51,14 +49,7 @@ h2{
     padding-left: 30px;
     margin-right: 40px;
 }
-h3{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(36, 36, 36);
-    color: white;
-    text-align: center;
-    margin: 100px;
-    padding: 50px;
-    margin-right: 150px;
-    padding-top: 40px;
+#reviews h5{
+    font-size: 50px;
+    text-align: center;  
 }
-

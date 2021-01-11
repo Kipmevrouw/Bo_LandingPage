@@ -10,8 +10,8 @@
     <title>Beroepsopdracht</title>
 </head>
 <body>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner mb-">
           <div class="carousel-item active">
             <img src="image/slide2.jpg" class="d-block w-100" alt="Het museum gebouwe" >
           </div>
@@ -37,40 +37,132 @@
         </a>
         <ul>
           <li><a href="#info">Informatie</a></li>
-          <li><a href="#ticket">Tickets</a></li>
-          <li><a href="#film">Filmpjes</a></li>
+          <li><a href="#film">Film</a></li>
           <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <main>
+
+        <section id="film">
+          <div class="container px-4">
+            <div class="row gx-5">
+              <div class="col bg-light">
+                <h6>Het LAM museum</h6>
+                <p>Het LAM ligt op het sfeervolle Landgoed Keukenhof, 
+                  tegenover de beroemde bloemententoonstelling. 
+                  In het museum stimuleren we je een paar dingen echt te bekijken en de rest voor later te bewaren. 
+                  Je ontdekt meer en houdt tijd en energie over voor al het moois rondom het museum.</p>
+              </div>
+              <div class="col">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/WZAZ68u4EuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quiz"> 
+          <!-- Dit is de plek voor de quiz -->
+        </section>
+
         <section id= "info">
-            <header>
-              <h1>Informatie:</h1>
-            </header>
-            <ol>
-              <h2>
-                Het LAM is jouw museum in Nederland. Gloednieuw en bomvol internationale topstukken. 
-                Het LAM is vooral ook een innovatief en persoonlijk museum dat je anders laat kijken. Voor alle leeftijden, en dan bedoelen we ook echt álle leeftijden. 
-                Met onze super persoonlijke aanpak krijg je altijd een kunstervaring op maat. 
-              </h2>
-            </ol>
+          <main class="container p-5">
+            <div class="row">
+               <div class="col-4">
+                <img class="img-fluid" src="https://www.lamlisse.nl/wp-content/uploads/2019/02/tilleman_20180609-0308.jpg"
+                alt="anders kijken">
+               </div>
+                <div class="col-8 p-5">
+                    <h6>Kom anders kijken in het LAM museum</h6>
+                    <p>Het LAM is jouw museum in Nederland. Gloednieuw en bomvol internationale topstukken. Het LAM is
+                        vooral ook een innovatief en persoonlijk museum dat je anders laat kijken. Voor alle leeftijden, en
+                        dan bedoelen we ook echt álle leeftijden. Met onze super persoonlijke aanpak krijg je altijd een
+                        kunstervaring op maat. </p>
+                    <div class="text-center">
+                        <button id="mijnButton" class="btn btn-primary">Ontdek het LAM ></button>
+                    </div>
+                    <script>
+                      document.getElementById("mijnButton").onclick = function () {         location.href = "https://www.lamlisse.nl/tickets";     };
+                    </script>
+                </div>
+            </div>
+          </main>
         </section>
-    
-        <section id= "ticket">
-            <header>
-              <h1>Tickets</h1>
-            </header>
-            <ol>
-              <h3>
-                Zin om te komen? Bestel dan hier jouw ticket met starttijd.<br/>
-                <br/>
-                <button id="mijnButton">Reserveer nu!</button>
-              </h3>
-              <script>
-                document.getElementById("mijnButton").onclick = function () {         location.href = "https://www.lamlisse.nl/tickets";     };
-              </script>
-            </ol>
+
+        <section class="mb-5" id="reviews">
+          <h5>Reviews:</h5>
+          <div class="container overflow-hidden">
+            <div class="row gy-5">
+              <div class="col-6 border bg-light">
+                <h6>Marijke Doppenberg;</h6>
+                <p>Food art wordt op een mooie, en soms ook ludieke manier weergegeven, voor alle leeftijden!
+                  De ápp verstrekt aanvullende informatie.
+                  Het Lam is in een prachtig park gelegen bij Kasteel Keukenhof.
+                  Zeker de moeite waard over een paar maanden nog een keer te gaan, om te zien welke andere kunstwerken er dan hangen.</p>
+              </div>
+              <div class="col-6 border bg-light">
+                <h6>G.J. Van den Herik;</h6>
+                <p>Prachtige locatie. Met leuke prikkelende collectie en uitdagende vip begeleiding.</p>
+              </div>
+              <div class="col-6 border bg-light">
+                <h6>Ron van Bruchem;</h6>
+                <p>Één van de best musea voor hedendaagse kunst in Nederland. 
+                  Er is een gevarieerde collectie, op een prachtige manier tentoongesteld in een schitterend gebouw. 
+                  Het personeel is echt betrokken bij de bezoekers. 
+                  Het is nog een jong museum maar een dikke aanrader om te bezoeken. 
+                  Het zit echt in de klasse van MORE en Voorlinden. Gratis parkeren. 
+                  Schitterende omgeving ook om te wandelen, met een beeldentuin en bloemen.
+                </p>
+              </div>
+              <div class="col-6 border bg-light">
+                <h6>Eric Blom;</h6>
+                <p>Echt een aanrader. Heel mooi nieuw museum. 
+                  Straalt rust uit. Met een bijzondere collectie rond uniek thema. 
+                  Ondanks deze rode draad zijn de werken meer dan interessant. 
+                  Kunstwerken zijn van hoog niveau. Zeer vriendelijke ontvangst met enthousiaste suppoosten. 
+                  Museum is gelegen in prachtig en groot park. Park is gratis toegankelijk en als je je laat sponsoren museum ook. Top!
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
+
+        <section id="contact">
+          <footer class="container overflow-hidden">
+            <div class="row gx-5 mb-5">   
+                <section class="col-6">
+                  <h3>Direct naar</h3>
+                  <ul class="nav flex-column">
+                      <li class="nav-item"><a class="nav-link text-secondary" href="#info">Informatie</a></li>
+                      <li class="nav-item"><a class="nav-link text-secondary" href="#film">Film</a></li>
+                      <li class="nav-item"><a class="nav-link text-secondary" href="#quiz">Quiz</a></li>
+                      <li class="nav-item"><a class="nav-link text-secondary" href="#reviews">Reviews</a></li>
+                  </ul>
+                </section>
+                <section id="contact1" class="col-6">
+                  <div class="py-3 pe-5">
+                    <img height="80px" src="https://www.lamlisse.nl/wp-content/uploads/2018/06/LAM-Lisser-ART-Museum-rgb.svg"
+                    alt="LAM - Lisse">
+                    <h3>Contactgegevens</h3>
+                        Keukenhof 14 2161 AN Lisse <br>
+                        Postbus 224 <br>
+                        2170 AE Sassenheim <br>
+                        <div class="icon-holder">
+                            <a href="tel:0252508800" class="icon">
+                                <i class="icofont-phone"></i>
+                                0252 508 800
+                            </a> <br>
+                            <a href="mailto:info@lamlisse.nl" class="icon">
+                                <i class="icofont-envelope"></i>
+                                info@lamlisse.nl
+                            </a>
+                        </div>
+                </section>
+            </div>
+          </footer>
+        </section>
+
       </main>
 </body>
 </html>
