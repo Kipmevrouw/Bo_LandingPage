@@ -20,14 +20,14 @@ nav ul{
     display: flex;
 }
 nav li{
-    flex: 0 0 260px;
+    flex: 1 0 260px;
 }
 nav a{
     color: rgb(173, 173, 173);
     text-decoration: none;
     display: black;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 15px;
 }
 nav a:hover{
@@ -52,4 +52,7 @@ h2{
 #reviews h5{
     font-size: 50px;
     text-align: center;  
+}
+h6{
+    padding-top: 20px;
 }
