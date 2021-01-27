@@ -5,6 +5,7 @@
     <script src = "./quiz1.js"></script>
     <script src = "./quiz2.js"></script>
     <script src="./script.js" defer></script>
+    <script src="extern.js"></script>
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -76,7 +77,6 @@
             <div class="resultBox" id="resultBox">einde</div>
           </div>
         </section>
-
         <section id= "info">
           <main class="container p-5">
             <div class="row">
@@ -90,7 +90,20 @@
                         vooral ook een innovatief en persoonlijk museum dat je anders laat kijken. Voor alle leeftijden, en
                         dan bedoelen we ook echt álle leeftijden. Met onze super persoonlijke aanpak krijg je altijd een
                         kunstervaring op maat. </p>
-                    <div class="text-center">
+                        <p id="greet">...</p>
+                        <script>
+                            document.getElementById('greet').textContent = "Hey jij! Klick op jou motivatie button!"
+                        </script>
+                        <input type="button" class="btn btn-primary" value = "Keuze 1" onclick="function inline(){
+                            document.getElementById('greet').textContent = 'Hoe langer je twijfelt hoe sneller je spijt krijgt..';
+                        }inline();">
+                    
+                        </input>
+                        <input type="button" class="btn btn-primary" value = "Keuze 2" onclick="clickedMe()"></input>
+                    <input type="button" class="btn btn-primary" value = "Keuze 3" onclick="function inline(){
+                        document.getElementById('greet').textContent = 'Wij stellen jou niet teleur! Check nu jou kunst in het LAM!'
+                    }inline();"></input>
+                    <div class="text-center p-2">
                         <button id="mijnButton" class="btn btn-primary">Ontdek het LAM ></button>
                     </div>
                     <script>
